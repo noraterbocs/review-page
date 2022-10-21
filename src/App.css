@@ -70,4 +70,7 @@ color: var(--clr-lightgrey);
   cursor: pointer;
   box-shadow: var(--light-shadow);
 }
+.btn:disabled{
+  opacity: 0.4;
+}
 

@@ -6,27 +6,19 @@ const Reviews = () => {
   const [index, setIndex] = useState(0);
   const { name, job, image, text } = people[index];
 
-  const setPageToPrevious = (event) => {
-    document.getElementById("nextBtn").disabled = false;
+  const setPageToPrevious = () => {
     if (index > 0) {
       setIndex(index - 1);
-    } else {
-      event.target.disabled = true;
     }
   };
 
-  const setPageToNext = (event) => {
-    document.getElementById("previousBtn").disabled = false;
+  const setPageToNext = () => {
     if (people.length - 1 > index) {
       setIndex(index + 1);
-    } else {
-      event.target.disabled = true;
     }
   };
 
   const setRandomPage = () => {
-    document.getElementById("previousBtn").disabled = false;
-    document.getElementById("nextBtn").disabled = false;
     setIndex(Math.floor(Math.random() * people.length));
   };
   return (
@@ -38,10 +30,20 @@ const Reviews = () => {
         <p className="text">{text}</p>
       </div>
       <div className="btn-wrap">
-        <button className="btn" id="previousBtn" onClick={setPageToPrevious}>
+        <button
+          className="btn"
+          id="previousBtn"
+          disabled={index === 0}
+          onClick={setPageToPrevious}
+        >
           <GrFormPrevious />
         </button>
-        <button className="btn" id="nextBtn" onClick={setPageToNext}>
+        <button
+          className="btn"
+          id="nextBtn"
+          disabled={people.length - 1 === index}
+          onClick={setPageToNext}
+        >
           <GrFormNext />
         </button>
       </div>
