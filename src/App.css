@@ -1,38 +1,73 @@
-.App {
+.main {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+}
+.title{
+  /* color: var(--crl-darkbluepurple); */
+  text-decoration: underline;
+  text-decoration-color: var(--crl-darkbluepurple);
+
+}
+.section-card{
+  box-shadow: var(--light-shadow);
+  background-color: var(--clr-offwhite);
+  max-width: 70%;
+  min-width:260px;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (min-width: 700px) {
+.section-card {
+    max-width: 600px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: var(--light-shadow);
+  margin: 1rem 0 0 0;
 }
+
+.name{
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+.job{
+  text-transform:uppercase;
+  margin-top: 0;
+  color: var(--crl-darkbluepurple);
+}
+
+.text{
+  margin: 1rem 1rem 1rem 1rem;
+color: var(--clr-lightgrey);
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 1rem 0;
+}
+
+.btn {
+  color: var(--crl-darkbluepurple);
+  border-color: transparent;
+  background-color: var(--clr-pastellpurple);
+  text-transform: capitalize;
+  padding: 0.2rem;
+  letter-spacing: var(--spacing);
+  border-radius: var(--radius);
+  outline: 1px solid #E2E9F9;
+  cursor: pointer;
+  box-shadow: var(--light-shadow);
+}
+
