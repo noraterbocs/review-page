@@ -5,9 +5,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  row-gap: 1rem;
 }
 .title{
-  /* color: var(--crl-darkbluepurple); */
   text-decoration: underline;
   text-decoration-color: var(--crl-darkbluepurple);
 
@@ -74,3 +74,22 @@ color: var(--clr-lightgrey);
   opacity: 0.4;
 }
 
+.question-title{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+}
+
+.btn-question{
+  border-radius: 50%;
+}
+
+.question-info{
+padding: 1rem 0 1rem 0;
+}
+
+.question-article{
+  margin:1rem 0 1rem 0;
+}
