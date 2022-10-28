@@ -7,7 +7,7 @@ const Questions = (question) => {
   return (
     <article key={question.id} className="section-article">
       <header className="question-title">
-        <h3>{question.title}</h3>
+        <h4>{question.title}</h4>
         <button
           className="btn btn-question"
           onClick={() => setShowInfo(!showInfo)}
@@ -16,7 +16,7 @@ const Questions = (question) => {
         </button>
       </header>
 
-      {showInfo && <p className="question-info">{question.info}</p>}
+      {showInfo && <p className="text">{question.info}</p>}
     </article>
   );
 };

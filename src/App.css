@@ -22,7 +22,10 @@
 
 @media only screen and (min-width: 700px) {
 .section-card {
-    max-width: 600px;
+    width: 600px;
+  }
+  .question-title {
+    font-size:medium;
   }
 }
 
@@ -49,7 +52,8 @@
 
 .text{
   margin: 1rem 1rem 1rem 1rem;
-color: var(--clr-lightgrey);
+  color: var(--clr-lightgrey);
+  padding-bottom: 2%;
 }
 
 .btn-wrap {
@@ -79,17 +83,17 @@ color: var(--clr-lightgrey);
   flex-direction: row;
   justify-content:space-between;
   align-items: center;
-  padding: 0 1rem 0 1rem;
+  margin: 1rem 1rem 1rem 1rem;
+  font-size: small;
 }
 
 .btn-question{
-  border-radius: 50%;
+  border-radius: 25%;
 }
 
-.question-info{
-padding: 1rem 0 1rem 0;
-}
-
-.question-article{
-  margin:1rem 0 1rem 0;
+.section-article{
+margin: 1rem 1rem 1rem 1rem;
+box-shadow: var(--light-shadow);
+background-color: var(--clr-offwhite);
+border-radius: 10px;
 }
