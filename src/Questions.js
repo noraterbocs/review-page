@@ -16,7 +16,7 @@ const Questions = (question) => {
         </button>
       </header>
 
-      {showInfo && <p className="text">{question.info}</p>}
+      <p className={`text ${showInfo ? "open" : "closed"}`}>{question.info}</p>
     </article>
   );
 };

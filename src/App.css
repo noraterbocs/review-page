@@ -51,9 +51,22 @@
 }
 
 .text{
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1rem;
   color: var(--clr-lightgrey);
-  padding-bottom: 2%;
+}
+
+.open{
+  overflow: hidden;
+  max-height:200px;
+  padding-bottom: 5px;
+  transition: max-height 1.5s ease-in-out;
+}
+
+.closed{
+  overflow: hidden;
+  padding-bottom: 0;
+  max-height:0;
+  /* transition: max-height 1.5s; */
 }
 
 .btn-wrap {
